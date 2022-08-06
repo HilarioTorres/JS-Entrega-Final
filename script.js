@@ -136,3 +136,9 @@ if (preguntaImpuesto > 2) {
 
 
 //asdasdasdasd
+
+console.log(document.getElementsByClassName("numero1"));
+
+console.log(document.getElementsByClassName("numero2"));
+
+console.log(document.getElementsByClassName("numero3"));
