@@ -1,3 +1,4 @@
+/*
 class Juego {
 
     constructor(Nombre, Desarrollador, Logros, Precio, FechaSalida) {
@@ -135,11 +136,16 @@ if (preguntaImpuesto > 2) {
 }
 
 
-//asdasdasdasd
+ */ 
 
-console.log(document.getElementById("div1"));
+const div1 = document.getElementById("div1");
 
-console.log(document.getElementById("div2"));
+const div2 = document.getElementById("div2");
 
-console.log(document.getElementById("div3"));
-;
+const div3 = document.getElementById("div3");
+
+div1.innerText = "Sean bienvenidos a nuestra maravillosa tienda de juegos :D";
+
+div2.innerText = "Tenemos el mejor catalogo :)";
+
+div3.innerText = "Con las mejores ofertas y los impuestos mas abusivos :o";

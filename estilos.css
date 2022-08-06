@@ -21,3 +21,24 @@ div{
     width: auto;
     margin: 10px;
 }
+
+#div1{
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 3px;
+}
+
+#div2{
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 3px;
+}
+
+#div3{
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 3px;
+}
