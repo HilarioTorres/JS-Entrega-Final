@@ -1,5 +1,6 @@
 .numero1{
 background-color: black;
+height: 8rem;
 }
 
 .numero2{
@@ -10,10 +11,13 @@ background-color: black;
         background-color: rgb(255, 0, 0);
         }
 
-
+p{
+    color: white;
+    padding: 3px;
+}
 
 div{
     height: 5rem;
-    width: 5rem;
+    width: auto;
     margin: 10px;
 }
