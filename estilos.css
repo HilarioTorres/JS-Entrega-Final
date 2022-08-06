@@ -1,0 +1,19 @@
+.numero1{
+background-color: black;
+}
+
+.numero2{
+    background-color: rgb(13, 0, 134);
+    }
+
+    .numero3{
+        background-color: rgb(255, 0, 0);
+        }
+
+
+
+div{
+    height: 5rem;
+    width: 5rem;
+    margin: 10px;
+}
