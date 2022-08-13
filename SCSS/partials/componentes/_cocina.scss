@@ -1,0 +1,130 @@
+.gridsCocina {
+    display: grid;
+    justify-content: center;
+    align-items: stretch;
+    justify-items: center;
+    gap: 0.6rem;
+    grid-template-areas:
+        "gridsCocinaLetritas"
+        "gridsCocinaUno"
+        " gridsCocinaDos"
+        " gridsCocinaTres"
+        "gridsCocinaCuatro"
+        " gridsCocinaCinco"
+        " gridsCocinaSeis"
+        "gridsCocinaSiete"
+        " gridsCocinaOcho"
+        " gridsCocinaNueve"
+        "gridsCocinaDiez"
+        " gridsCocinaOnce"
+        " gridsCocinaDoce"
+        "gridsCocinaTrece"
+        " gridsCocinaCatorce"
+        " gridsCocinaQuince";
+
+        figure a img{
+            @include borde-Radius(map-get($colores, "colorSecundario"))
+                }
+}
+
+.gridsCocinaLetritas {
+    grid-area: gridsCocinaLetritas;
+    font-family: 'Nunito', sans-serif;
+    color:map-get($colores, "colorPrimario");
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.gridsCocinaUno {
+    grid-area: gridsCocinaUno;
+}
+
+.gridsCocinaDos {
+    grid-area: gridsCocinaDos;
+}
+
+.gridsCocinaTres {
+    grid-area: gridsCocinaTres;
+}
+
+.gridsCocinaCuatro {
+    grid-area: gridsCocinaCuatro;
+}
+
+.gridsCocinaCinco {
+    grid-area: gridsCocinaCinco;
+}
+
+.gridsCocinaSeis {
+    grid-area: gridsCocinaSeis;
+}
+
+.gridsCocinaSiete {
+    grid-area: gridsCocinaSiete;
+}
+
+.gridsCocinaOcho {
+    grid-area: gridsCocinaOcho;
+}
+
+.gridsCocinaNueve {
+    grid-area: gridsCocinaNueve;
+}
+
+.gridsCocinaDiez {
+    grid-area: gridsCocinaDiez;
+}
+
+.gridsCocinaOnce {
+    grid-area: gridsCocinaOnce;
+}
+
+.gridsCocinaDoce {
+    grid-area: gridsCocinaDoce;
+}
+
+.gridsCocinaTrece {
+    grid-area: gridsCocinaTrece;
+}
+
+.gridsCocinaCatorce {
+    grid-area: gridsCocinaCatorce;
+}
+
+.gridsCocinaQuince {
+    grid-area: gridsCocinaQuince;
+}
+
+@media (min-width: 768px) {
+
+    .gridsCocina {
+        grid-template-areas:
+            "gridsCocinaLetritas gridsCocinaLetritas"
+            "gridsCocinaUno gridsCocinaDos"
+            " gridsCocinaTres gridsCocinaCuatro"
+            " gridsCocinaCinco gridsCocinaSeis"
+            "gridsCocinaSiete gridsCocinaOcho"
+            " gridsCocinaNueve gridsCocinaDiez"
+            " gridsCocinaOnce gridsCocinaDoce"
+            "gridsCocinaTrece gridsCocinaCatorce"
+            " gridsCocinaQuince gridsCocinaQuince";
+    }
+
+
+}
+
+@media (min-width: 1024px) {
+
+    .gridsCocina {
+        grid-template-areas:
+            "gridsCocinaLetritas gridsCocinaLetritas gridsCocinaLetritas"
+            "gridsCocinaUno gridsCocinaDos gridsCocinaTres"
+            "gridsCocinaCuatro gridsCocinaCinco gridsCocinaSeis"
+            "gridsCocinaSiete gridsCocinaOcho gridsCocinaNueve"
+            "gridsCocinaDiez gridsCocinaOnce gridsCocinaDoce"
+            "gridsCocinaTrece gridsCocinaCatorce gridsCocinaQuince";
+    }
+
+}

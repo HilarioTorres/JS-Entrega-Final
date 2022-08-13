@@ -1,0 +1,7 @@
+.navbar-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between !important; //Pongo un important porque boostrap no me deja hacer lo que quiero, justamente porque hay otro important, se que es mala practica
+    align-items: flex-start;
+    height: 100%;
+}

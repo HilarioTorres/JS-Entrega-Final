@@ -1,0 +1,88 @@
+
+.gridMejoresOfertas {
+    display: grid;
+    grid-template-areas:
+        "tituloLocal"
+        "ImagenUnoLocal"
+        "ImagenDosLocal"
+        "ImagenTresLocal"
+        "ImagenCuatroLocal";
+    gap: 0.625rem;
+    margin-bottom: 0.6rem;
+    margin-top: 00.6rem;
+    text-align: center;
+}
+
+.nombreOfertasGrid {
+    grid-area: tituloLocal;
+}
+
+.nombreOfertasGridDos {
+    grid-area: ImagenUnoLocal;
+}
+
+.nombreOfertasGridTres {
+    grid-area: ImagenDosLocal;
+}
+
+.nombreOfertasGridCuatro {
+    grid-area: ImagenTresLocal;
+}
+
+.nombreOfertasGridCinco {
+    grid-area: ImagenCuatroLocal;
+}
+
+.tamañoImagenOfertas {
+    height: 12.5rem;
+    width: auto;
+}
+
+@media (min-width: 768px){
+
+    .gridMejoresOfertas {
+        display: grid;
+        grid-template-areas:
+            "tituloLocal tituloLocal"
+            "ImagenUnoLocal ImagenDosLocal"
+            "ImagenTresLocal ImagenCuatroLocal";
+        align-items: end;
+        justify-content: center;
+        gap: 0.625rem;
+        margin-bottom: 0.6rem;
+        margin-top: 00.6rem;
+        text-align: center;
+    }
+
+    .tamañoImagenOfertas {
+        height: 15.25rem;
+        width: auto;
+    }
+    
+}
+
+@media (min-width: 1024px) {
+
+    .tamañoDeimagenNuestoLocal {
+        height: 25rem;
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
+        margin-top: 1.25rem;
+    }
+
+    .centrarImagenLocal {
+        width: 100%;
+        height: 36rem;
+    }
+
+    .nombreOfertasGrid {
+        font-size: 40px;
+    }
+
+    .gridMejoresOfertas a img {
+        height: 20.85rem;
+        width: auto;
+    }
+    
+}

@@ -1,0 +1,46 @@
+main {
+    margin-top: 25%;
+}
+
+body {
+    background-color: #ffedd8;
+}
+
+.color-Dark {
+    background-color: #0f0e17;
+    main {
+        p {
+            color: white;
+        }
+        h1 {
+            color: white;
+        }
+        h2 {
+            color: white;
+        }
+        }
+        header {
+            nav {
+                background-color: #312e44;
+            }
+    }
+}
+
+@media (min-width: 768px) {
+
+
+    main {
+        margin-top: 10%;
+    }
+
+
+
+}
+
+@media (min-width: 1024px) {
+
+    main {
+        margin-top: 5%;
+    }
+
+}

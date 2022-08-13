@@ -1,0 +1,129 @@
+.gridsLiving {
+    display: grid;
+    justify-content: center;
+    align-items: stretch;
+    justify-items: center;
+    gap: 0.6rem;
+    grid-template-areas:
+        "gridLivingLetritas"
+        "gridLivingUno"
+        "gridLivingDos"
+        "gridLivingTres"
+        "gridLivingCuatro"
+        "gridLivingCinco"
+        "gridLivingSeis"
+        "gridLivingSiete"
+        "gridLivingOcho"
+        "gridLivingNueve"
+        "gridLivingDiez"
+        "gridLivingOnce"
+        "gridLivingDoce"
+        "gridLivingTrece"
+        "gridLivingCatorce"
+        "gridLivingQuince";
+    text-align: center;
+
+    figure a img{
+@include borde-Radius(map-get($colores, "colorSecundario"))
+    }
+}
+
+.gridsLivingLetritas {
+    grid-area: gridLivingLetritas;
+    font-family: 'Nunito', sans-serif;
+    color: map-get($colores, "colorPrimario");
+    font-size: 30px;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.gridsLivingUno {
+    grid-area: gridLivingUno;
+}
+
+.gridsLivingDos {
+    grid-area: gridLivingDos;
+}
+
+.gridsLivingTres {
+    grid-area: gridLivingTres;
+}
+
+.gridsLivingCuatro {
+    grid-area: gridLivingCuatro;
+}
+
+.gridsLivingCinco {
+    grid-area: gridLivingCinco;
+}
+
+.gridsLivingSeis {
+    grid-area: gridLivingSeis;
+}
+
+.gridsLivingSiete {
+    grid-area: gridLivingSiete;
+}
+
+.gridsLivingOcho {
+    grid-area: gridLivingOcho;
+}
+
+.gridsLivingNueve {
+    grid-area: gridLivingNueve;
+}
+
+.gridsLivingDiez {
+    grid-area: gridLivingDiez;
+}
+
+.gridsLivingOnce {
+    grid-area: gridLivingOnce;
+}
+
+.gridsLivingDoce {
+    grid-area: gridLivingDoce;
+}
+
+.gridsLivingTrece {
+    grid-area: gridLivingTrece;
+}
+
+.gridsLivingCatorce {
+    grid-area: gridLivingCatorce;
+}
+
+.gridsLivingQuince {
+    grid-area: gridLivingQuince;
+}
+
+@media (min-width: 768px) {
+
+    .gridsLiving {
+        grid-template-areas:
+            "gridLivingLetritas gridLivingLetritas"
+            "gridLivingUno gridLivingDos"
+            "gridLivingTres gridLivingCuatro"
+            "gridLivingCinco gridLivingSeis"
+            "gridLivingSiete gridLivingOcho"
+            "gridLivingNueve gridLivingDiez"
+            "gridLivingOnce gridLivingDoce"
+            "gridLivingTrece gridLivingCatorce"
+            "gridLivingQuince gridLivingQuince";
+    }
+
+}
+
+@media (min-width: 1024px) {
+
+    .gridsLiving {
+        grid-template-areas:
+            "gridLivingLetritas gridLivingLetritas gridLivingLetritas"
+            "gridLivingUno gridLivingDos gridLivingTres"
+            "gridLivingCuatro gridLivingCinco gridLivingSeis"
+            "gridLivingSiete gridLivingOcho gridLivingNueve"
+            "gridLivingDiez gridLivingOnce gridLivingDoce"
+            "gridLivingTrece gridLivingCatorce gridLivingQuince";
+    }
+
+}

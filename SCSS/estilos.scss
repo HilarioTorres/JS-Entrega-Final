@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import "./partials/base/variables";
+@import "./partials/base/mixins";
+@import "./partials/base/extends";
+@import "./partials/componentes/mejores-ofertas";
+@import "./partials/layout/header";
+@import "./partials/componentes/tamaño-Titulos";
+@import "./partials/layout/main";
+@import "./partials/componentes/metodo-de-pago";
+@import "./partials/componentes/nuestro-Local";
+@import "./partials/layout/footers";
+@import "./partials/componentes/comedor";
+@import "./partials/componentes/living";
+@import "./partials/componentes/cocina";
+@import "./partials/componentes/contacto";
+@import "./partials/componentes/historia";
+@import "./partials/layout/nav";

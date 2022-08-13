@@ -1,0 +1,133 @@
+.historia-uno {
+    h2 {
+        margin: 0rem 1rem;
+        text-align: start;
+    }
+
+    div {
+        display: grid;
+        align-items: end;
+        justify-items: center;
+
+
+        p {
+            margin: 0rem 1rem;
+        }
+
+        figure {
+            img {
+                width: 22rem;
+                height: auto;
+            }
+        }
+    }
+}
+
+.historia-dos {
+    h2 {
+        margin: 0rem 1rem;
+        text-align: start;
+    }
+
+    div {
+        display: grid;
+        align-items: end;
+        justify-items: center;
+
+        p {
+            margin: 0rem 1rem;
+        }
+
+        figure {
+            img {
+                width: 22rem;
+                height: auto;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+
+    .historia-uno {
+        figure {
+            img {
+                width: 32rem;
+                height: auto;
+            }
+        }
+    }
+
+    .historia-dos {
+        figure {
+            img {
+                width: 32rem;
+                height: auto;
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+body{
+    margin-top:7%;
+
+    .historia-uno {
+        h2{
+            font-size: 41px;
+        }
+        div {
+            margin-top: 2.5rem;
+            align-items: center;
+            justify-items: start;
+            grid-template-areas: "historia-texto historia-imagen";
+            grid-template-columns: 40% 60%;
+            p {
+                grid-area: historia-texto;
+                font-size: 30px;
+            }
+            figure {
+                grid-area: historia-imagen;
+                img {
+                    width: 42rem;
+                    height: auto;
+                }
+            }
+        }
+    }
+    .historia-dos{
+        h2{
+            font-size: 30px;
+        }
+        div{
+            margin-top: 7px;
+            grid-template-areas: 
+            "historia-texto-dos historia-imagen-dos "
+            ;
+            align-items: center;
+            justify-items: center;
+            p{
+                font-size: 20px;
+                grid-area: historia-texto-dos;
+            }
+            figure{
+                grid-area: historia-imagen-dos;
+                margin-right: 10px;
+                img{
+                    width: 32rem;
+                    height: auto;
+                }
+            }
+        }
+    }
+
+}
+
+}
+
+@media (min-width: 1680px) {
+body{
+    margin-top: 0%;
+}
+// No se por que hay un error con boostrap que me deja la nav tapando el titulo en algunas medidas y en otras no
+}

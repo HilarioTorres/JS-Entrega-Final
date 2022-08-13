@@ -5,25 +5,143 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos.css">
-    <title>Primera Entrega DOM</title>
+    <meta name="description"
+        content="Tenemos los muebles de mayor calidad y precio, con mucha variedad de productos. Visítanos hoy, atendemos todos los días de 07:00am - 23:00pm">
+    <meta name="keywords"
+        content="Muebles, Sentey, Barato, Calidad, Sillones, Locales, Sillas, Cocina, Comedor, Living, Contacto">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="./estilos/estilos.css">
+    <title>Muebles Sentey</title>
 </head>
 
-<body>
-
+<body class="color-Dark">
+    <header>
+        <nav class="navbar navbar-light fixed-top ">
+            <div class="container-fluid ">
+                <h1>
+                    <a class="navbar-brand" href="./index.html"><img class="tamañoLogoHeader"
+                            src="./img/Mueble Sentey LOGO.png" alt="logo de la marca"></a>
+                </h1>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img class="tamañoLogoHeader"
+                                src="./img/Mueble Sentey LOGO.png" alt="logo de la marca"></h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <div class="division-Estetica">
+                                <li class="nav-item">
+                                    <a class="nav-link " aria-current="page" href="./secciones/comedor.html">Comedor</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./secciones/living.html">Living</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " aria-current="page" href="./secciones/cocina.html">Cocina</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./secciones/historia.html">Historia</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./secciones/contacto.html">Contacto</a>
+                                </li>
+                            </div>
+                            <div class="division-Estetica-Botones">
+                                <button type="button" id="Light" class="btn btn-light">Light</button>
+                                <button type="button" id="Dark" class="btn btn-dark">Dark</button>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
     <main>
-        <section>
-            <h1>Tienda Juegos Pepito</h1>>
-            <button id="boton1">Haga click aqui para ver nuestro catalogo</button>
-            <section class="sectionDivs">
-                <section id="textoSection1"></section>
-                <section id="textoSection2" ></section>
-                <section id="textoSection3" ></section>
-                <section id="textoSection4" ></section>
-                <section id="textoSection5" ></section>
-            </section>
+        <div id="carouselExampleIndicators" class="carousel slide container" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/locales-decoracion-zona-oeste-gba.jpg" class="d-block w-100" alt="Nuestro Local">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/51.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/52.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+        </div>
+        <section class="gridMejoresOfertas margin-leve">
+            <h2 class="nombreOfertasGrid">Nuestras Mejores ofertas</h2>
+            <a class="nombreOfertasGridDos" href="https://www.mercadolibre.com.ar"><img class="tamañoImagenOfertas"
+                    src="./img/1.JPG" alt="Oferta 1"></a>
+            <a class="nombreOfertasGridTres" href="https://www.mercadolibre.com.ar"> <img class="tamañoImagenOfertas"
+                    src="./img/2.JPG" alt="Oferta 2"></a>
+            <a class="nombreOfertasGridCuatro" href="https://www.mercadolibre.com.ar"><img class="tamañoImagenOfertas"
+                    src="./img/3.jpg" alt="Oferta 3"></a>
+            <a class="nombreOfertasGridCinco" href="https://www.mercadolibre.com.ar"><img class="tamañoImagenOfertas"
+                    src="./img/4.jpg" alt="Oferta 4"></a>
+        </section>
+        <div class="gridMetodoPago margin-leve">
+            <p class="paddingMetodoPago">Metodos de pago</p>
+            <figure class="gridPagoImagen">
+                <img class="tamañoImagenMetodoDePago" src="./img/mercado pago.jpg" alt="Metodos de Pago">
+            </figure>
+        </div>
+        <Section class="gridoMapa">
+            <p class="nuestroLocalGrid">Nuestro Local</p>
+            <iframe class="gridMapa animate__hinge "
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26272.71875871539!2d-58.431256137072396!3d-34.60188954967539!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca7a88680c55%3A0xe1297a37643deee5!2sil%20Divano%20Home%20Sillones%20y%20Deco!5e0!3m2!1ses-419!2sar!4v1654807976904!5m2!1ses-419!2sar"
+                width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </Section>
     </main>
-    <script src="./script.js"></script>
+    <footer>
+        <a href="https://www.instagram.com"><img
+                src="https://img.icons8.com/fluency/48/undefined/instagram-new.png" /></a>
+        <a href="https://twitter.com"><img src="https://img.icons8.com/color/48/undefined/twitter--v1.png" /></a>
+        <a href="https://www.mercadolibre.com.ar"><img class="tamañoMercadoLibreLogo"
+                src="./img/mercado-libre-logo-6.png" alt="Logo de mercadolibre"></a>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="./script-fondo.js"></script>
+
 </body>
 
 </html>

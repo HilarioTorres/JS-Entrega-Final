@@ -1,0 +1,129 @@
+.gridsComedor {
+    display: grid;
+    grid-template-areas:
+        "GridsComedorUno"
+        "GridsComedorDos"
+        " GridsComedorTres"
+        " GridsComedorCuatro"
+        "GridsComedorCinco"
+        " GridsComedorSeis"
+        " GridsComedorSiete"
+        "GridsComedorOcho"
+        " GridsComedorNueve"
+        " GridsComedorDiez"
+        "GridsComedorOnce"
+        " GridsComedorDoce"
+        " GridsComedorTrece"
+        "GridsComedorCatorce"
+        " GridsComedorQuince"
+        " GridsComedorDieciseis";
+    justify-content: center;
+    align-items: stretch;
+    justify-items: center;
+    gap: 0.6rem;
+    text-align: center;
+
+    figure a img{
+        @include borde-Radius(map-get($colores, "colorSecundario"))
+            }
+}
+
+.gridsComedorLetritas {
+    grid-area: GridsComedorUno;
+    font-family: 'Nunito', sans-serif;
+    color: black;
+    font-size: 30px;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.gridsComedorDos {
+    grid-area: GridsComedorDos;
+}
+
+.gridsComedorTres {
+    grid-area: GridsComedorTres;
+}
+
+.gridsComedorCuatro {
+    grid-area: GridsComedorCuatro;
+}
+
+.gridsComedorCinco {
+    grid-area: GridsComedorCinco;
+}
+
+.gridsComedorSeis {
+    grid-area: GridsComedorSeis;
+}
+
+.gridsComedorSiete {
+    grid-area: GridsComedorSiete;
+}
+
+.gridsComedorOcho {
+    grid-area: GridsComedorOcho;
+}
+
+.gridsComedorNueve {
+    grid-area: GridsComedorNueve;
+}
+
+.gridsComedorDiez {
+    grid-area: GridsComedorDiez;
+}
+
+.gridsComedorOnce {
+    grid-area: GridsComedorOnce;
+}
+
+.gridsComedorDoce {
+    grid-area: GridsComedorDoce;
+}
+
+.gridsComedorTrece {
+    grid-area: GridsComedorTrece;
+}
+
+.gridsComedorCatorce {
+    grid-area: GridsComedorCatorce;
+}
+
+.gridsComedorQuince {
+    grid-area: GridsComedorQuince;
+}
+
+.gridsComedorDieciseis {
+    grid-area: GridsComedorDieciseis;
+}
+
+@media (min-width: 768px) {
+
+    .gridsComedor {
+        grid-template-areas:
+            "GridsComedorUno GridsComedorUno"
+            "GridsComedorDos GridsComedorTres"
+            " GridsComedorCuatro GridsComedorCinco"
+            " GridsComedorSeis GridsComedorSiete"
+            "GridsComedorOcho GridsComedorNueve"
+            " GridsComedorDiez GridsComedorOnce"
+            " GridsComedorDoce GridsComedorTrece"
+            "GridsComedorCatorce GridsComedorQuince"
+            " GridsComedorDieciseis GridsComedorDieciseis";
+    }
+
+}
+
+@media (min-width: 1024px) {
+
+    .gridsComedor {
+        grid-template-areas:
+            "GridsComedorUno GridsComedorUno GridsComedorUno"
+            "GridsComedorDos GridsComedorTres GridsComedorCuatro"
+            "GridsComedorCinco GridsComedorSeis GridsComedorSiete"
+            "GridsComedorOcho GridsComedorNueve GridsComedorDiez"
+            "GridsComedorOnce GridsComedorDoce GridsComedorTrece"
+            "GridsComedorCatorce GridsComedorQuince GridsComedorDieciseis";
+    }
+
+}

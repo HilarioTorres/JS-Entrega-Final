@@ -1,0 +1,72 @@
+.gridMetodoPago {
+    display: grid;
+    grid-template-areas:
+        "pagoUno pagoUno"
+        "pagoDos pagoDos";
+    align-items: center;
+    justify-items: center;
+
+}
+
+.paddingMetodoPago {
+    grid-area: pagoUno;
+    font-family: 'Nunito', sans-serif;
+    color: map-get($colores, "colorPrimario");
+    font-size: 20px;
+
+    &:hover {
+        color: rgb(255, 255, 255);
+        text-shadow: 1px 1px 0 black, 1px -1px 0 black, -1px 1px 0 black, -1px -1px 0 black;
+    }
+}
+
+.gridPagoImagen {
+    grid-area: pagoDos;
+}
+
+.paddingMetodoPago {
+    text-align: center;
+}
+
+.tamañoImagenMetodoDePago {
+    height: 6rem;
+    width: auto;
+}
+
+
+@media (min-width: 768px) {
+
+    .tamañoImagenMetodoDePago {
+        height: 10.25rem;
+        width: auto;
+    }
+
+
+
+}
+
+@media (min-width: 1024px) {
+
+    .gridMetodoPago {
+        height: 20.875rem;
+        width: 100%;
+        align-items: end;
+        justify-content: center;
+    }
+
+    .paddingMetodoPago {
+        padding-top: 0.6rem;
+        margin-left: 0%;
+        margin-right: 0%;
+        text-align: center;
+    }
+
+    .gridPagoImagen {
+        margin-left: 0%;
+    }
+
+    .tamañoImagenMetodoDePago {
+        height: auto;
+        width: auto;
+    }
+}

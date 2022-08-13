@@ -1,0 +1,5 @@
+@mixin borde-Radius($color-Borde) {
+    border: $color-Borde solid 1px;
+    border-radius: 5%;
+    
+}

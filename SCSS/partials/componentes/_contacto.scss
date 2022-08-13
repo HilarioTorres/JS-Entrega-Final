@@ -1,0 +1,106 @@
+.tamañoContactanos {
+    padding-top: 0.5rem;
+    padding-left: 0.3rem;
+    font-size: 2.5em;
+}
+
+.formContacto {
+    border: 1px black solid;
+    border-radius: 2%;
+    background: rgb(182, 182, 182);
+    background: linear-gradient(180deg, rgba(182, 182, 182, 0.5256477591036415) 0%, rgba(182, 182, 182, 0.4864320728291317) 50%, rgba(182, 182, 182, 0.48363095238095233) 100%);
+    width: 22.3rem;
+    height: auto;
+    margin: 0.6rem 0 0.6rem 2%;
+}
+
+.marginContactoResponsive {
+    margin: 1% 0% 0% 2%;
+}
+
+.paddinContacto {
+    padding: 00.625rem;
+}
+
+.gridContacto {
+
+    display: grid;
+    grid-template-areas:
+        "gridContactoUno"
+        "gridContactoDos"
+        "gridContactoTres"
+        "gridContactoCuatro"
+        "gridContactoCinco";
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+.gridContactoUno {
+    grid-area: gridContactoUno;
+}
+
+.gridContactoDos {
+    grid-area: gridContactoDos;
+}
+
+.gridContactoTres {
+    grid-area: gridContactoTres;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.gridContactoCuatro {
+    grid-area: gridContactoCuatro;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.gridContactoCinco {
+    grid-area: gridContactoCinco;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+@media (min-width: 768px) {
+
+    .formContacto {
+        width: 40rem;
+    }
+
+
+}
+
+@media (min-width: 1024px) {
+
+
+    .gridContacto {
+        grid-template-areas:
+            "gridContactoUno gridContactoDos"
+            "gridContactoUno gridContactoTres"
+            "gridContactoUno gridContactoCuatro"
+            "gridContactoUno gridContactoCinco";
+        grid-template-columns: 55% 45%;
+    }
+
+
+}
+
+
+@media (min-width: 1680px) {
+    .formContacto {
+        width: 60rem;
+    }
+
+}

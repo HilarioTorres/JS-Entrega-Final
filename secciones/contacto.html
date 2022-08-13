@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contáctese con nosotros a través de este formulario">
+    <meta name="keywords" content="Muebles, Sentey, Barato, Calidad, Sillones, Locales, Sillas, Cocina, Comedor, Living, Contacto">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="../estilos/estilos.css">
+    <title>Contacto</title>
+</head>
+
+<body class="color-Dark">
+    <header>
+        <nav class="navbar navbar-light fixed-top ">
+            <div class="container-fluid ">
+                <h1>
+                    <a class="navbar-brand" href="../index.html"><img class="tamañoLogoHeader"
+                            src="../img/Mueble Sentey LOGO.png" alt="logo de la marca"></a>
+                </h1>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img class="tamañoLogoHeader"
+                                src="../img/Mueble Sentey LOGO.png" alt="logo de la marca"></h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <div class="division-Estetica">
+                                <li class="nav-item">
+                                    <a class="nav-link " aria-current="page" href="./comedor.html">Comedor</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./living.html">Living</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " aria-current="page" href="./cocina.html">Cocina</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./historia.html">Historia</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./contacto.html">Contacto</a>
+                                </li>
+                            </div>
+                            <div class="division-Estetica-Botones">
+                                <button type="button" id="Light" class="btn btn-light">Light</button>
+                                <button type="button" id="Dark" class="btn btn-dark">Dark</button>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2 class="tamañoContactanos margin-leve">Contactanos</h2>
+        </section>
+        <section class="gridContacto ">
+            <section class="formContacto gridContactoUno marginContactoResponsive ">
+                <div class="row g-3 paddinContacto ">
+                    <div class="col">
+                        <label for="Nombre">Nombre</label>
+                        <input type="text" id="nombreInput" class="form-control" placeholder="Nombre" aria-label="Nombre">
+                    </div>
+                    <div class="col">
+                        <label for="Apellido">Apellido</label>
+                        <input type="text" id="apellidoInput" class="form-control" placeholder="Apellido" aria-label="Apellido">
+                    </div>
+                </div>
+                <div class="mb-3 paddinContacto">
+                    <label for="exampleFormControlInput1" class="form-label">Correo Electronico</label>
+                    <input type="email" id="emailInput" class="form-control" id="exampleFormControlInput1"
+                        placeholder="example@gmail.com">
+                </div>
+                <div class="mb-3 paddinContacto">
+                    <label for="mensajeParaEmail" class="form-label">Escriba mensaje</label>
+                    <textarea class="form-control" id="mensajeParaEmail" id="textoInput" rows="3"></textarea>
+                </div>
+                <div class="paddinContacto">
+                    <label for="customRange1" class="form-label">Que tan satisfactoria fue nuestra atención?</label>
+                    <input type="range" class="form-range" id="customRange1">
+                </div>
+                <div class="paddinContacto">
+                    <div class="form-check ">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            Deseo recibir notificaciones
+                        </label>
+                    </div>
+                    <div class="form-check ">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+                            checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            No deseo recibir notificaciones
+                        </label>
+                    </div>
+                </div>
+                </div>
+                <div class="paddinContacto">
+                    <div class="col-12">
+                        <button class="btn btn-primary" id="enviarInfo" type="submit">Enviar</button>
+                    </div>
+                </div>
+            </section>
+            <div class="centrarTextoContacto gridContactoCelular gridContactoTablet ">
+                <p class="gridContactoDos gridContactoTabletDos ">Brindamos la mejor atención al cliente y los mejores
+                    productos de mayor calidad. Puede contactarnos
+                    mediante los siguientes medios</p>
+                <div class="gridContactoTres gridContactoTabletTres">
+                    <img src="https://img.icons8.com/fluency/48/undefined/phone.png" />
+                    <p>+54 11-1233-2323</p>
+                </div>
+                <div class="gridContactoCuatro gridContactoTabletCuatro ">
+                    <a href="https://mail.google.com/mail/u/0/?ogbl#inbox"><img
+                            src="https://img.icons8.com/fluency/48/undefined/mail.png" /></a>
+                    <p>mueblessentey@gmail.com</p>
+                </div>
+                <div class="gridContactoCinco gridContactoTabletCinco ">
+                    <a
+                        href="https://www.google.com/maps/place/il+Divano+Home+Sillones+y+Deco/@-34.598493,-58.427893,13z/data=!4m5!3m4!1s0x0:0xe1297a37643deee5!8m2!3d-34.598493!4d-58.427893?hl=es-419"><img
+                            src="https://img.icons8.com/fluency/48/undefined/map.png" /></a>
+                    <p>Villa Crespo, Ciudad Autónoma de Buenos Aires, Argentina </p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <a href="https://www.instagram.com"><img
+                src="https://img.icons8.com/fluency/48/undefined/instagram-new.png" /></a>
+        <a href="https://twitter.com"><img src="https://img.icons8.com/color/48/undefined/twitter--v1.png" /></a>
+        <a href="https://www.mercadolibre.com.ar"><img class="tamañoMercadoLibreLogo"
+                src="../img/mercado-libre-logo-6.png" alt="Logo de mercadolibre"></a>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+        <script src="../script-fondo.js"></script>
+        <script src="../script-contacto.js"></script>
+</body>
+
+</html>
