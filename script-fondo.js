@@ -10,12 +10,30 @@ fondoNegro == "dark" ? document.body.classList.add("color-Dark") : document.body
 botonDark.addEventListener("click",() =>{
     document.body.classList.add("color-Dark");
     localStorage.setItem("fondoNegro", "dark");
+    EjecutadoCorrecto();
 })
 
 botonLight.addEventListener("click",() =>{
     document.body.classList.remove("color-Dark");
     localStorage.setItem("fondoNegro", "light");
+    EjecutadoCorrecto();
 })
 
-//Pude solucionar lo del local storage, ahora queda guardado, pero el problema es que cada html es independiente y no se como hacer que el cambio de uno se quede guardado en otro
-
+function EjecutadoCorrecto() {
+    const Toast = Swal.mixin({
+        toast: true,
+        position: 'bottom-start',
+        showConfirmButton: false,
+        timer: 3000,
+        timerProgressBar: true,
+        didOpen: (toast) => {
+          toast.addEventListener('mouseenter', Swal.stopTimer)
+          toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+      })
+      
+      Toast.fire({
+        icon: 'success',
+        title: 'Guardado Correctamente'
+      })
+}
