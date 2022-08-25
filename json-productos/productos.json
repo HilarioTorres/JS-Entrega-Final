@@ -1,0 +1,9 @@
+[
+    {
+        "nombre": "Silla cuerina beige",
+        "tipo": "silla",
+        "stock": 10,
+        "precio": 3000,
+        "img": "./img/6.JPG"
+    }
+]
