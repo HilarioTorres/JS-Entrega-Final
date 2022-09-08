@@ -25,6 +25,11 @@
         figure a img{
             @include borde-Radius(map-get($colores, "colorSecundario"))
                 }
+                div{
+                    div{
+                        text-align: center;
+                    }
+                }
 }
 
 .gridsCocinaLetritas {

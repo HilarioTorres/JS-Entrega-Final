@@ -379,6 +379,8 @@ footer {
   .gridsCocina figure a img {
     border: #0f0f0f solid 1px;
     border-radius: 5%; }
+  .gridsCocina div div {
+    text-align: center; }
 
 .gridsCocinaLetritas {
   grid-area: gridsCocinaLetritas;

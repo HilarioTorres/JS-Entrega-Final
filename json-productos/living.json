@@ -6,6 +6,7 @@
         "precio": 7000,
         "img": "20.JPG",
         "claseGrid": "gridsLivingUno"
+        
     },
     {
         "nombre": "Sillón apoya brazos beige",
@@ -16,7 +17,7 @@
         "claseGrid": "gridsLivingDos"
     },
     {
-        "nombre": "mueble mesa madera negra",
+        "nombre": "Mueble mesa madera negra",
         "tipo": "mueble",
         "stock": 10,
         "precio": 3000,
