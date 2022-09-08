@@ -23,9 +23,13 @@
     gap: 0.6rem;
     text-align: center;
 
-    figure a img{
-        @include borde-Radius(map-get($colores, "colorSecundario"))
-            }
+    figure{
+        div{
+            img{
+                @include borde-Radius(map-get($colores, "colorSecundario"))
+                    }
+        }
+    }
 }
 
 .gridsComedorLetritas {

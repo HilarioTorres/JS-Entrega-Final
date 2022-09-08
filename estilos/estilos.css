@@ -231,7 +231,7 @@ footer {
   justify-items: center;
   gap: 0.6rem;
   text-align: center; }
-  .gridsComedor figure a img {
+  .gridsComedor figure div img {
     border: #0f0f0f solid 1px;
     border-radius: 5%; }
 

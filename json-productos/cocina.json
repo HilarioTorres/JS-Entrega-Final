@@ -1,0 +1,121 @@
+[
+    {
+        "nombre": "Modular blanco tabla negra",
+        "tipo": "estante",
+        "stock": 10,
+        "precio": 10000,
+        "img": "34.jpg",
+        "claseGrid": "gridsCocinaUno"
+    },
+    {
+        "nombre": "Mueble blanco seis puertas negras",
+        "tipo": "estante",
+        "stock": 10,
+        "precio": 9000,
+        "img": "35.jpg",
+        "claseGrid": "gridsCocinaDos"
+    },
+    {
+        "nombre": "Mueble blanco seis puertas",
+        "tipo": "estante",
+        "stock": 10,
+        "precio": 9000,
+        "img": "36.jpg",
+        "claseGrid": "gridsCocinaTres"
+    },
+    {
+        "nombre": "Mueble blanco seis puertas marron",
+        "tipo": "estante",
+        "stock": 10,
+        "precio": 9000,
+        "img": "37.jpg",
+        "claseGrid": "gridsCocinaCuatro"
+    },
+    {
+        "nombre": "Mueble blanco cuatro puertas verdes",
+        "tipo": "estante",
+        "stock": 10,
+        "precio": 9000,
+        "img": "38.jpg",
+        "claseGrid": "gridsCocinaCinco"
+    },
+    {
+        "nombre": "Mueble alto blanco",
+        "tipo": "estante",
+        "stock": 10,
+        "precio": 5000,
+        "img": "39.jpg",
+        "claseGrid": "gridsCocinaSeis"
+    },
+    {
+        "nombre": "Mueble alto blanco tres estantes",
+        "tipo": "estante",
+        "stock": 10,
+        "precio": 5000,
+        "img": "40.jpg",
+        "claseGrid": "gridsCocinaSiete"
+    },
+    {
+        "nombre": "Mueble alto blanco tres estantes con cajón",
+        "tipo": "estante",
+        "stock": 10,
+        "precio": 5000,
+        "img": "41.jpg",
+        "claseGrid": "gridsCocinaOcho"
+    },
+    {
+        "nombre": "Mueble alto blanco dos puertas",
+        "tipo": "estante",
+        "stock": 10,
+        "precio": 5000,
+        "img": "42.jpg",
+        "claseGrid": "gridsCocinaNueve"
+    },
+    {
+        "nombre": "Mueble dos cuerpos blanco",
+        "tipo": "estante",
+        "stock": 10,
+        "precio": 6000,
+        "img": "43.jpg",
+        "claseGrid": "gridsCocinaDiez"
+    },
+    {
+        "nombre": "Modular blanco",
+        "tipo": "estante",
+        "stock": 10,
+        "precio": 9000,
+        "img": "44.jpg",
+        "claseGrid": "gridsCocinaOnce"
+    },
+    {
+        "nombre": "Modular blanco tabla metalizada",
+        "tipo": "estante",
+        "stock": 10,
+        "precio": 9000,
+        "img": "45.jpg",
+        "claseGrid": "gridsCocinaDoce"
+    },
+    {
+        "nombre": "Pequeño estante blanco dos puertas",
+        "tipo": "estante",
+        "stock": 10,
+        "precio": 3000,
+        "img": "46.jpg",
+        "claseGrid": "gridsCocinaTrece"
+    },
+    {
+        "nombre": "Modular marron tabla negra",
+        "tipo": "estante",
+        "stock": 10,
+        "precio": 9000,
+        "img": "47.jpg",
+        "claseGrid": "gridsCocinaCatorce"
+    },
+    {
+        "nombre": "Pequeño estante negro tres cajones",
+        "tipo": "estante",
+        "stock": 10,
+        "precio": 3000,
+        "img": "20.JPG",
+        "claseGrid": "gridsCocinaQuince"
+    }]

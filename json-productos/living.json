@@ -1,0 +1,124 @@
+[
+    {
+        "nombre": "Mueble de madera cuatro puertas",
+        "tipo": "mueble",
+        "stock": 10,
+        "precio": 7000,
+        "img": "20.JPG",
+        "claseGrid": "gridsLivingUno"
+    },
+    {
+        "nombre": "Sillón apoya brazos beige",
+        "tipo": "sofa",
+        "stock": 10,
+        "precio": 3000,
+        "img": "27.JPG",
+        "claseGrid": "gridsLivingDos"
+    },
+    {
+        "nombre": "mueble mesa madera negra",
+        "tipo": "mueble",
+        "stock": 10,
+        "precio": 3000,
+        "img": "21.JPG",
+        "claseGrid": "gridsLivingTres"
+    },
+    {
+        "nombre": "Sillón amplio blanco",
+        "tipo": "sofa",
+        "stock": 10,
+        "precio": 3000,
+        "img": "28.JPG",
+        "claseGrid": "gridsLivingCuatro"
+    },
+    {
+        "nombre": "Mueble alto ocho estantes marron",
+        "tipo": "mueble",
+        "stock": 10,
+        "precio": 9000,
+        "img": "22.JPG",
+        "claseGrid": "gridsLivingCinco"
+    },
+    {
+        "nombre": "Sillón marron una persona",
+        "tipo": "sofa",
+        "stock": 10,
+        "precio": 4000,
+        "img": "29.JPG",
+        "claseGrid": "gridsLivingSeis"
+    },
+    {
+        "nombre": "Mueble mesita fina gris",
+        "tipo": "mueble",
+        "stock": 10,
+        "precio": 2000,
+        "img": "23.JPG",
+        "claseGrid": "gridsLivingSiete"
+    },
+    {
+        "nombre": "Sillón familiar blanco dos cuerpos",
+        "tipo": "sofa",
+        "stock": 10,
+        "precio": 12000,
+        "img": "30.JPG",
+        "claseGrid": "gridsLivingOcho"
+    },
+    {
+        "nombre": "Mueble alto cinco estantes",
+        "tipo": "mueble",
+        "stock": 10,
+        "precio": 5000,
+        "img": "24.JPG",
+        "claseGrid": "gridsLivingNueve"
+    },
+    {
+        "nombre": "Sillón marron dos personas",
+        "tipo": "sofa",
+        "stock": 10,
+        "precio": 6000,
+        "img": "31.JPG",
+        "claseGrid": "gridsLivingDiez"
+    },
+    {
+        "nombre": "Mueble negro de vidrio cuatro estantes",
+        "tipo": "mueble",
+        "stock": 10,
+        "precio": 10000,
+        "img": "25.JPG",
+        "claseGrid": "gridsLivingOnce"
+    },
+    {
+        "nombre": "Sillón blanco dos cuerpos",
+        "tipo": "sofa",
+        "stock": 10,
+        "precio": 8000,
+        "img": "32.JPG",
+        "claseGrid": "gridsLivingDoce"
+    },
+    {
+        "nombre": "Mueble retro madera blanca",
+        "tipo": "mueble",
+        "stock": 10,
+        "precio": 3000,
+        "img": "26.JPG",
+        "claseGrid": "gridsLivingTrece"
+    },
+    {
+        "nombre": "Sillón marron claro una persona",
+        "tipo": "sofa",
+        "stock": 10,
+        "precio": 3000,
+        "img": "33.JPG",
+        "claseGrid": "gridsLivingCatorce"
+    },
+    {
+        "nombre": "Mueble mesita vidrio con bandeja",
+        "tipo": "mueble",
+        "stock": 10,
+        "precio": 2000,
+        "img": "49.JPG",
+        "claseGrid": "gridsLivingQuince"
+    }
+
+
+]

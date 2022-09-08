@@ -1,0 +1,121 @@
+[
+    {
+        "nombre": "Silla cuerina beige",
+        "tipo": "silla",
+        "stock": 10,
+        "precio": 3000,
+        "img": "6.JPG",
+        "claseGrid": "gridsComedorDos"
+    }, 
+    {
+        "nombre": "Mesa manchitas de colores",
+        "tipo": "mesa",
+        "stock": 10,
+        "precio": 5000,
+        "img": "13.JPG",
+        "claseGrid": "gridsComedorTres"  },
+    {
+        "nombre": "Silla alta cuerina negra",
+        "tipo": "silla",
+        "stock": 10,
+        "precio": 2000,
+        "img": "7.JPG",
+        "claseGrid": "gridsComedorCuatro"
+    },
+    {
+        "nombre": "Mesa de madera con cuadraditos",
+        "tipo": "mesa",
+        "stock": 10,
+        "precio": 4000,
+        "img": "14.JPG",
+        "claseGrid": "gridsComedorCinco"
+    },
+    {
+        "nombre": "Silla baja cuerina negra",
+        "tipo": "silla",
+        "stock": 10,
+        "precio": 1000,
+        "img": "8.JPG",
+        "claseGrid": "gridsComedorSeis"
+    },
+    {
+        "nombre": "Mesa de madera reclinable",
+        "tipo": "mesa",
+        "stock": 10,
+        "precio": 5000,
+        "img": "15.JPG",
+        "claseGrid": "gridsComedorSiete"
+    },
+    {
+        "nombre": "Silla con funda gris",
+        "tipo": "silla",
+        "stock": 10,
+        "precio": 3500,
+        "img": "9.JPG",
+        "claseGrid": "gridsComedorOcho"
+    },
+    {
+        "nombre": "Mesa ratona madera oscura patas para afuera",
+        "tipo": "mesa",
+        "stock": 10,
+        "precio": 9000,
+        "img": "16.JPG",
+        "claseGrid": "gridsComedorNueve"
+    },
+    {
+        "nombre": "Silla forrada gris",
+        "tipo": "silla",
+        "stock": 10,
+        "precio": 3400,
+        "img": "10.JPG",
+        "claseGrid": "gridsComedorDiez"
+    },
+    {
+        "nombre": "Mesa ratona madera clara patas para afuera",
+        "tipo": "mesa",
+        "stock": 10,
+        "precio": 9000,
+        "img": "17.JPG",
+        "claseGrid": "gridsComedorOnce"
+    },
+    {
+        "nombre": "Silla con respaldo acolchado gris",
+        "tipo": "silla",
+        "stock": 10,
+        "precio": 3000,
+        "img": "11.JPG",
+        "claseGrid": "gridsComedorDoce"
+    },
+    {
+        "nombre": "Mesa ratona madera negra patas para afuera",
+        "tipo": "mesa",
+        "stock": 10,
+        "precio": 9000,
+        "img": "18.JPG",
+        "claseGrid": "gridsComedorTrece"
+    },
+    {
+        "nombre": "Silla cuerina marron con almohadones",
+        "tipo": "silla",
+        "stock": 10,
+        "precio": 5000,
+        "img": "12.JPG",
+        "claseGrid": "gridsComedorCatorce"
+    },
+    {
+        "nombre": "Mesa moderna gris",
+        "tipo": "mesa",
+        "stock": 10,
+        "precio": 4000,
+        "img": "19.JPG",
+        "claseGrid": "gridsComedorQuince"
+    },
+    {
+        "nombre": "Mesa cuadrada madera clara",
+        "tipo": "mesa",
+        "stock": 10,
+        "precio": 2000,
+        "img": "50.JPG",
+        "claseGrid": "gridsComedorDieciseis"
+    }
+]

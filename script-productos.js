@@ -1,15 +1,39 @@
 const PrimerProducto = document.getElementById("figura1")
 
-fetch("./json-productos/productos.json")
-.then(reponse => response.json())
-.then(productos =>{
-    productos.forEach(img=> {
-        PrimerProducto.innerHTML = `
-        <a href="https://www.mercadolibre.com.ar"><img src="${productos.img}" alt="silla version uno"></a>
-        
+fetch("/json-productos/comedor.json")
+    .then(response => response.json())
+    .then(productos => {
+        productos.forEach((producto) => {
+            PrimerProducto.innerHTML += `
+        <div class="card" style="width: 18rem;">
+            <img src="../img/${producto.img}" class="card-img-top" alt="silla version uno">
+            <div class="card-body ${producto.claseGrid}">
+                <h3 class="card-title">${producto.nombre}</h3>
+                <p class="card-text">Stock:${producto.stock}</p>
+                <h4 class="card-title">Precio:$${producto.precio}</h4>
+                <button type="button" class="btn btn-outline-warning">Añadir al carrito</button>
+            </div>
+        </div>
         `
-    });
-})
+        });
+    })
 
-//La idea para proyecto final es pasar todos los productos a objetos y hacer un carrito con eso.
-//El problema es que me salta error con el json, no se solucionarlo y trate pero no le encontre forma, asi que lo entrego con el error y con la correccion espero poder terminarlo
+    const SegundoProducto = document.getElementById("figura2")
+
+fetch("/json-productos/cocina.json")
+    .then(response => response.json())
+    .then(productos => {
+        productos.forEach((producto) => {
+            SegundoProducto.innerHTML += `
+        <div class="card" style="width: 18rem;">
+            <img src="../img/${producto.img}" class="card-img-top" alt="silla version uno">
+            <div class="card-body ${producto.claseGrid}">
+                <h3 class="card-title">${producto.nombre}</h3>
+                <p class="card-text">Stock:${producto.stock}</p>
+                <h4 class="card-title">Precio:$${producto.precio}</h4>
+                <button type="button" class="btn btn-outline-warning">Añadir al carrito</button>
+            </div>
+        </div>
+        `
+        });
+    })
