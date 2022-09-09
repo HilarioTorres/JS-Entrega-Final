@@ -7,17 +7,19 @@ localStorage.getItem("fondoNegro") ? fondoNegro = localStorage.getItem("fondoNeg
 
 fondoNegro == "dark" ? document.body.classList.add("color-Dark") : document.body.classList.remove("color-Dark")
 
+//Sirve para poner el tema Light como defult al entrar a la pagina
+
 botonDark.addEventListener("click",() =>{
     document.body.classList.add("color-Dark");
     localStorage.setItem("fondoNegro", "dark");
-    EjecutadoCorrecto();
-})
+    EjecutadoCorrecto(); 
+}) //sirve para agregar/sobrescribir el tema oscuro cuando se da al boton
 
 botonLight.addEventListener("click",() =>{
     document.body.classList.remove("color-Dark");
     localStorage.setItem("fondoNegro", "light");
     EjecutadoCorrecto();
-})
+}) //sirve para eliminar el tema oscuro y asi hace el cambio a Light
 
 function EjecutadoCorrecto() {
     const Toast = Swal.mixin({
@@ -37,3 +39,5 @@ function EjecutadoCorrecto() {
         title: 'Guardado Correctamente'
       })
 }
+
+//Funciones para llamar un sweet alert

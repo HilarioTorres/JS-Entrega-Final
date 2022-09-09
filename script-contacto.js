@@ -4,20 +4,15 @@ class user {
         this.apellido = apellido
         this.email = email
         this.texto = texto
-    }
-}
-
-// let nombreUsuario = document.getElementById("nombreInput");
-// let apellidoUsuario = document.getElementById("apellidoInput");
-// let emailUsuario = document.getElementById("emailInput");
-// let textoUsuario = document.getElementById("textoInput");
+    } 
+} // Creacion de objeto
 
 let inviarInfoInput = document.getElementById("enviarInfo");
 const users = [];
 
 inviarInfoInput.addEventListener("click", (event) => {
     event.preventDefault();
-    let nombreUsuario = document.getElementById("nombreInput"); //No me deja poner el .value, no logro encontrar el error 
+    let nombreUsuario = document.getElementById("nombreInput");
     let apellidoUsuario = document.getElementById("apellidoInput");
     let emailUsuario = document.getElementById("emailInput");
     let textoUsuario = document.getElementById("textoInput");
@@ -25,6 +20,6 @@ inviarInfoInput.addEventListener("click", (event) => {
     const usuario = new user(nombreUsuario, apellidoUsuario, emailUsuario, textoUsuario);
     users.push(usuario);
     console.log(users);
-    //inviarInfoInput.reset() No se porque no me sale tampoco el reser, no encuentro el error
 })
 
+//Se crea un array de objetos con los datos ingresados en los imputs del form de contacto
