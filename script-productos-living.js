@@ -1,6 +1,12 @@
 const TercerProducto = document.getElementById("figura3")
 const carrodecompras = JSON.parse(localStorage.getItem("carrodecompras"))?? []
-const carrito = document.getElementsByClassName("botonCarrito")
+const carrito = document.getElementById("botonCarrito")
+
+async function consultaDeProductos() {
+    const response = await fetch("/json-productos/living.json")
+    const productos = await response.json()
+    return productos
+}
 
 fetch("/json-productos/living.json")
     .then(response => response.json())
@@ -26,9 +32,9 @@ fetch("/json-productos/living.json")
                     let indiceCarrito = carrodecompras.findIndex((prod => prod.id == producto.id))
                     if(carrodecompras[indiceCarrito].cantidad < producto.stock){
                         carrodecompras[indiceCarrito].cantidad ++
-                        
-                    }if(productoCarrito == 10 ){
-                        sinStock()
+                        if (carrodecompras[indiceCarrito].cantidad > 9) {
+                            sinStock()
+                        }
                     }
                 } else {
                     const productoCarrito = {id: producto.id, cantidad:1}
@@ -40,14 +46,15 @@ fetch("/json-productos/living.json")
         })
     })
 
-    carrito.addEventListener("click", ()=>{
+    carrito.addEventListener("click", async()=>{
         const productoComprado = JSON.parse(localStorage.getItem("carrodecompras"))
 
         if (productoComprado.length == 0) {
             errorCarroVacio()
         } else {
+            const productosParaConsultar = await consultaDeProductos()
             productoComprado.forEach((producto) => {
-
+                
             })
         }
     })
@@ -70,7 +77,10 @@ function errorCarroVacio() {
         title: 'Carrito Vacio'
     })
 }
-
 function sinStock() {
-    Swal.fire('Sin Stock')
+    Swal.fire(
+        'No hay stock',
+        'Intente mas tarde',
+        'error'
+    )
 }

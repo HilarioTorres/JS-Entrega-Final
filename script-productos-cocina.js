@@ -1,5 +1,6 @@
     const SegundoProducto = document.getElementById("figura2")
     const carrodecompras = JSON.parse(localStorage.getItem("carrodecompras"))?? []
+    const carrito = document.getElementById("botonCarrito")
 
     fetch("/json-productos/cocina.json")
         .then(response => response.json())
@@ -25,6 +26,9 @@
                         let indiceCarrito = carrodecompras.findIndex((prod => prod.id == producto.id))
                         if(carrodecompras[indiceCarrito].cantidad < producto.stock){
                             carrodecompras[indiceCarrito].cantidad ++
+                            if (carrodecompras[indiceCarrito].cantidad > 9) {
+                                sinStock()
+                            }
                         }
                     } else {
                         const productoCarrito = {id: producto.id, cantidad:1}
@@ -34,6 +38,43 @@
                     localStorage.setItem("carrodecompras", JSON.stringify(carrodecompras));
                 })
             })
-
         })
     
+        carrito.addEventListener("click", async()=>{
+            const productoComprado = JSON.parse(localStorage.getItem("carrodecompras"))
+    
+            if (productoComprado.length == 0) {
+                errorCarroVacio()
+            } else {
+                const productosParaConsultar = await consultaDeProductos()
+                productoComprado.forEach((producto) => {
+                    
+                })
+            }
+        })
+    
+    function errorCarroVacio() {
+        const Toast = Swal.mixin({
+            toast: true,
+            position: 'bottom-start',
+            showConfirmButton: false,
+            timer: 3000,
+            timerProgressBar: true,
+            didOpen: (toast) => {
+                toast.addEventListener('mouseenter', Swal.stopTimer)
+                toast.addEventListener('mouseleave', Swal.resumeTimer)
+            }
+        })
+    
+        Toast.fire({
+            icon: 'error',
+            title: 'Carrito Vacio'
+        })
+    }
+    function sinStock() {
+        Swal.fire(
+            'No hay stock',
+            'Intente mas tarde',
+            'error'
+        )
+    }

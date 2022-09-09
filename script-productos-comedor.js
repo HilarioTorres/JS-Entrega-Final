@@ -1,5 +1,6 @@
 const PrimerProducto = document.getElementById("figura1")
 const carrodecompras = JSON.parse(localStorage.getItem("carrodecompras"))?? []
+const carrito = document.getElementById("botonCarrito")
 
 fetch("/json-productos/comedor.json")
     .then(response => response.json())
@@ -25,6 +26,9 @@ fetch("/json-productos/comedor.json")
                     let indiceCarrito = carrodecompras.findIndex((prod => prod.id == producto.id))
                     if(carrodecompras[indiceCarrito].cantidad < producto.stock){
                         carrodecompras[indiceCarrito].cantidad ++
+                        if (carrodecompras[indiceCarrito].cantidad > 9) {
+                            sinStock()
+                        }
                     }
                 } else {
                     const productoCarrito = {id: producto.id, cantidad:1}
@@ -35,3 +39,42 @@ fetch("/json-productos/comedor.json")
             })
         })
     })
+
+    carrito.addEventListener("click", async()=>{
+        const productoComprado = JSON.parse(localStorage.getItem("carrodecompras"))
+
+        if (productoComprado.length == 0) {
+            errorCarroVacio()
+        } else {
+            const productosParaConsultar = await consultaDeProductos()
+            productoComprado.forEach((producto) => {
+                
+            })
+        }
+    })
+
+function errorCarroVacio() {
+    const Toast = Swal.mixin({
+        toast: true,
+        position: 'bottom-start',
+        showConfirmButton: false,
+        timer: 3000,
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    })
+
+    Toast.fire({
+        icon: 'error',
+        title: 'Carrito Vacio'
+    })
+}
+function sinStock() {
+    Swal.fire(
+        'No hay stock',
+        'Intente mas tarde',
+        'error'
+    )
+}
