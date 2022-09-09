@@ -1,4 +1,5 @@
 const PrimerProducto = document.getElementById("figura1")
+const carrodecompras = JSON.parse(localStorage.getItem("carrodecompras"))?? []
 
 fetch("/json-productos/comedor.json")
     .then(response => response.json())
@@ -16,4 +17,21 @@ fetch("/json-productos/comedor.json")
         </div>
         `
         });
+
+        productos.forEach((producto, indice) =>{
+            const idProductoCocina = document.getElementById(`producto${indice}`)
+            idProductoCocina.children[1].children[3].addEventListener("click", () =>{
+                if (carrodecompras.find(prod=> prod.id == producto.id)) {
+                    let indiceCarrito = carrodecompras.findIndex((prod => prod.id == producto.id))
+                    if(carrodecompras[indiceCarrito].cantidad < producto.stock){
+                        carrodecompras[indiceCarrito].cantidad ++
+                    }
+                } else {
+                    const productoCarrito = {id: producto.id, cantidad:1}
+                    carrodecompras.push(productoCarrito);
+                }
+                
+                localStorage.setItem("carrodecompras", JSON.stringify(carrodecompras));
+            })
+        })
     })

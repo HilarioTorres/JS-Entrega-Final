@@ -1,4 +1,6 @@
 const TercerProducto = document.getElementById("figura3")
+const carrodecompras = JSON.parse(localStorage.getItem("carrodecompras"))?? []
+const carrito = document.getElementsByClassName("botonCarrito")
 
 fetch("/json-productos/living.json")
     .then(response => response.json())
@@ -16,4 +18,59 @@ fetch("/json-productos/living.json")
         </div>
         `
         });
+
+        productos.forEach((producto, indice) =>{
+            const idProductoCocina = document.getElementById(`producto${indice}`)
+            idProductoCocina.children[1].children[3].addEventListener("click", () =>{
+                if (carrodecompras.find(prod=> prod.id == producto.id)) {
+                    let indiceCarrito = carrodecompras.findIndex((prod => prod.id == producto.id))
+                    if(carrodecompras[indiceCarrito].cantidad < producto.stock){
+                        carrodecompras[indiceCarrito].cantidad ++
+                        
+                    }if(productoCarrito == 10 ){
+                        sinStock()
+                    }
+                } else {
+                    const productoCarrito = {id: producto.id, cantidad:1}
+                    carrodecompras.push(productoCarrito);
+                }
+                
+                localStorage.setItem("carrodecompras", JSON.stringify(carrodecompras));
+            })
+        })
     })
+
+    carrito.addEventListener("click", ()=>{
+        const productoComprado = JSON.parse(localStorage.getItem("carrodecompras"))
+
+        if (productoComprado.length == 0) {
+            errorCarroVacio()
+        } else {
+            productoComprado.forEach((producto) => {
+
+            })
+        }
+    })
+
+function errorCarroVacio() {
+    const Toast = Swal.mixin({
+        toast: true,
+        position: 'bottom-start',
+        showConfirmButton: false,
+        timer: 3000,
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    })
+
+    Toast.fire({
+        icon: 'error',
+        title: 'Carrito Vacio'
+    })
+}
+
+function sinStock() {
+    Swal.fire('Sin Stock')
+}

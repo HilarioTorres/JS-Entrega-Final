@@ -5,7 +5,8 @@
         "stock": 10,
         "precio": 3000,
         "img": "6.JPG",
-        "claseGrid": "gridsComedorDos"
+        "claseGrid": "gridsComedorDos",
+        "id": 1
     }, 
     {
         "nombre": "Mesa manchitas de colores",
@@ -13,14 +14,16 @@
         "stock": 10,
         "precio": 5000,
         "img": "13.JPG",
-        "claseGrid": "gridsComedorTres"  },
+        "claseGrid": "gridsComedorTres",
+        "id": 2  },
     {
         "nombre": "Silla alta cuerina negra",
         "tipo": "silla",
         "stock": 10,
         "precio": 2000,
         "img": "7.JPG",
-        "claseGrid": "gridsComedorCuatro"
+        "claseGrid": "gridsComedorCuatro",
+        "id": 3
     },
     {
         "nombre": "Mesa de madera con cuadraditos",
@@ -28,7 +31,8 @@
         "stock": 10,
         "precio": 4000,
         "img": "14.JPG",
-        "claseGrid": "gridsComedorCinco"
+        "claseGrid": "gridsComedorCinco",
+        "id": 4
     },
     {
         "nombre": "Silla baja cuerina negra",
@@ -36,7 +40,8 @@
         "stock": 10,
         "precio": 1000,
         "img": "8.JPG",
-        "claseGrid": "gridsComedorSeis"
+        "claseGrid": "gridsComedorSeis",
+        "id": 5
     },
     {
         "nombre": "Mesa de madera reclinable",
@@ -44,7 +49,8 @@
         "stock": 10,
         "precio": 5000,
         "img": "15.JPG",
-        "claseGrid": "gridsComedorSiete"
+        "claseGrid": "gridsComedorSiete",
+        "id": 6
     },
     {
         "nombre": "Silla con funda gris",
@@ -52,7 +58,8 @@
         "stock": 10,
         "precio": 3500,
         "img": "9.JPG",
-        "claseGrid": "gridsComedorOcho"
+        "claseGrid": "gridsComedorOcho",
+        "id": 7
     },
     {
         "nombre": "Mesa ratona madera oscura patas para afuera",
@@ -60,7 +67,8 @@
         "stock": 10,
         "precio": 9000,
         "img": "16.JPG",
-        "claseGrid": "gridsComedorNueve"
+        "claseGrid": "gridsComedorNueve",
+        "id": 8
     },
     {
         "nombre": "Silla forrada gris",
@@ -68,7 +76,8 @@
         "stock": 10,
         "precio": 3400,
         "img": "10.JPG",
-        "claseGrid": "gridsComedorDiez"
+        "claseGrid": "gridsComedorDiez",
+        "id": 9
     },
     {
         "nombre": "Mesa ratona madera clara patas para afuera",
@@ -76,7 +85,8 @@
         "stock": 10,
         "precio": 9000,
         "img": "17.JPG",
-        "claseGrid": "gridsComedorOnce"
+        "claseGrid": "gridsComedorOnce",
+        "id": 10
     },
     {
         "nombre": "Silla con respaldo acolchado gris",
@@ -84,7 +94,8 @@
         "stock": 10,
         "precio": 3000,
         "img": "11.JPG",
-        "claseGrid": "gridsComedorDoce"
+        "claseGrid": "gridsComedorDoce",
+        "id": 11
     },
     {
         "nombre": "Mesa ratona madera negra patas para afuera",
@@ -92,7 +103,8 @@
         "stock": 10,
         "precio": 9000,
         "img": "18.JPG",
-        "claseGrid": "gridsComedorTrece"
+        "claseGrid": "gridsComedorTrece",
+        "id": 12
     },
     {
         "nombre": "Silla cuerina marron con almohadones",
@@ -100,7 +112,8 @@
         "stock": 10,
         "precio": 5000,
         "img": "12.JPG",
-        "claseGrid": "gridsComedorCatorce"
+        "claseGrid": "gridsComedorCatorce",
+        "id": 13
     },
     {
         "nombre": "Mesa moderna gris",
@@ -108,7 +121,8 @@
         "stock": 10,
         "precio": 4000,
         "img": "19.JPG",
-        "claseGrid": "gridsComedorQuince"
+        "claseGrid": "gridsComedorQuince",
+        "id": 14
     },
     {
         "nombre": "Mesa cuadrada madera clara",
@@ -116,6 +130,7 @@
         "stock": 10,
         "precio": 2000,
         "img": "50.JPG",
-        "claseGrid": "gridsComedorDieciseis"
+        "claseGrid": "gridsComedorDieciseis",
+        "id": 15
     }
 ]
